@@ -4,7 +4,8 @@
 
 This repository is being built to contain all the required essential information that a java developer must know. 
 > [Interview Questions](https://github.com/shadowasphodel2919/Java-Jottings/blob/main/Interview%20Questions.md)
-<br>
-> [Graphs](https://github.com/shadowasphodel2919/Java-Jottings/blob/main/Graphs.md)
-<br>
-> [Multithreading](https://github.com/shadowasphodel2919/Java-Jottings/blob/main/MultithreadingJava.md)
+
+## Java Concepts
+
+###### [Graphs](https://github.com/shadowasphodel2919/Java-Jottings/blob/main/Graphs.md)
+###### [Multithreading](https://github.com/shadowasphodel2919/Java-Jottings/blob/main/MultithreadingJava.md)
