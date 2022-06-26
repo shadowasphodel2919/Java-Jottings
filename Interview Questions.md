@@ -15,7 +15,17 @@ Yes, the main method can be overloaded but the execution starts with the main fu
 ### A Java Constructor returns a value but, what?
 No, Java constructor does not return a value. And it is not a method, its sole purpose is to initialize the instance variables.
 ### Can we create a program without main method?
+In version 1.7 and later it is necessary to include a ``main()`` function. But in earlier versions it was possible using static block.
+```
+public class Test{   
+    // this is static block
 
+    static{
+        System.out.println("This is static block");  
+        System.exit(0);
+    }
+}
+```
 ### What are the six ways to use this keyword?
 ### Why is multiple inheritance not supported in Java?
 ### Why use aggregation?
