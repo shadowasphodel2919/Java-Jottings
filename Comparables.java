@@ -6,9 +6,16 @@ public class Comparables {
         students.add(new Student("Porthos", 89, 2));
         students.add(new Student("Aramis",91, 3));
 
+        //Using Comparable
         System.out.println("Original Array: ");
         for(int i = 0; i < 3; i++)System.out.println(students.get(i).name);
         Collections.sort(students);
+        System.out.println("Sorted Array: "+ students);
+        for(int i = 0; i < 3; i++)System.out.println(students.get(i).name);
+
+        //Using Comparator
+        StudentMarkComparator cmp = new StudentMarkComparator();
+        Collections.sort(students,cmp);
         System.out.println("Sorted Array: "+ students);
         for(int i = 0; i < 3; i++)System.out.println(students.get(i).name);
     }    
@@ -27,5 +34,12 @@ class Student implements Comparable<Student>{
     @Override
     public int compareTo(Student b){
         return Integer.compare(this.marks, b.marks);
+    }
+}
+
+class StudentMarkComparator implements Comparator<Student>{
+    @Override
+    public int compare(Student a, Student b){
+        return Integer.compare(a.marks, b.marks);
     }
 }
